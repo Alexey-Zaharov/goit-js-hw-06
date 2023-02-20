@@ -7,11 +7,12 @@ const colorChngBtn = document.querySelector(".change-color");
 const colorToShow = document.querySelector(".color");
 
 colorChngBtn.addEventListener("click", () => {
-  elementToChenge.style.backgroundColor = getRandomHexColor();
-  colorToShow.textContent = getRandomHexColor();
+  const colorValue = getRandomHexColor();
+  elementToChenge.style.backgroundColor = colorValue;
+  colorToShow.textContent = colorValue;
 });
 
 // colorChngBtn.addEventListener("click", () => {
+//   elementToChenge.style.backgroundColor = getRandomHexColor();
 //   colorToShow.textContent = getRandomHexColor();
-//   elementToChenge.style.backgroundColor = colorToShow.textContent;
 // });
